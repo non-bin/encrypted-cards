@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"
+        integrity="sha384-YkYpnhy3j3+zc3fQvzlbh4WGwDgt+06gsGsaApwM1O3IKIsKJk61C0Lr6YvbovUV"
+        crossorigin="anonymous"></script>
+    <script src="/static/js/common.js"></script>
+    <script src="/static/js/new.js"></script>
+    <link rel="icon" href="/static/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/static/styles/style.css" type="text/css">
+    <title>encrypted.cards</title>
+</head>
+
+<body>
+    <div class="centered">
+        <h1>encrypted.cards</h1>
+        Hi there. So you want to create a new encrypted business card? Cool!<br><br>
+        <div class=listing>
+            1. Create your online business card<br>
+            2. Save the secret edit link somewhere safe<br>
+            3. Write your card link to your NFC chip<br>
+        </div>
+        <br>
+        <b>This is a free beta service and I do not guarantee anything!</b><br><br>
+        <div id=cardform>
+            <!--TODO the new endpoint might change so this ID is not selectable-->
+            <input id=readtos required type=checkbox unchecked>I have read the topic or the readme</input>
+            <details>
+                <summary>custom ID for link (can't be encrypted)</summary>
+                <input id=customid placeholder="Your id, usually your username, this will be in the url /id" type=text
+                    pattern="^[a-zA-Z0-9-]+$" /><br>
+            </details>
+            <button id=createbutton>create a new business card</button>
+        </div>
+    </div>
+</body>
+
+</html>
