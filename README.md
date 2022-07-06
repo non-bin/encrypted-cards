@@ -1,4 +1,4 @@
-# encrypted-cards
+# encrypted-cards WIP!!!
 
 Your client-side encrypted business card.
 
