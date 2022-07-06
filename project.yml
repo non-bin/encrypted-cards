@@ -1,0 +1,11 @@
+parameters: {}
+environment: {}
+packages:
+  - name: encrypted-cards
+    environment: {}
+    parameters: {}
+    actions:
+      - name: api
+        runtime: 'go:default'
+        environment: {}
+        parameters: {}
