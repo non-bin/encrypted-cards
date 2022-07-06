@@ -119,7 +119,7 @@ function makeUrl(type, value) {
 
 async function loadStyles() {
     let data = ""
-    await fetch("/static/styles/styles.json").then(x => x.text().then(y => data = y))
+    await fetch("/styles/styles.json").then(x => x.text().then(y => data = y))
     if (data == "") {
         return undefined
     }

@@ -35,10 +35,10 @@ async function loadui() {
     let style = document.createElement("link")
     style.rel = "stylesheet"
     style.type = "text/css"
-    style.href = "/static/styles/" + model.style + "/style.css"
+    style.href = "/styles/" + model.style + "/style.css"
     style.media = 'all';
     document.head.appendChild(style);
-    
+
     //Required Fields
     fullname.innerText = model.fullname
     bio.innerText = model.bio
@@ -56,7 +56,7 @@ async function loadui() {
         link.classList.add("link")
         let icon = document.createElement("img")
         icon.classList.add("icon")
-        icon.src = "/static/styles/" + model.style + "/" + entryName + ".svg"
+        icon.src = "/styles/" + model.style + "/" + entryName + ".svg"
         link.appendChild(icon)
         link.appendChild(document.createTextNode(entry.displayname))
         element.appendChild(link)
@@ -73,7 +73,7 @@ async function loadui() {
                 vcardlink.classList.add("link")
                 let vicon = document.createElement("img")
                 vicon.classList.add("icon")
-                vicon.src = "/static/styles/" + model.style + "/phone.svg"
+                vicon.src = "/styles/" + model.style + "/phone.svg"
                 vcardlink.appendChild(vicon)
                 vcardlink.appendChild(document.createTextNode("save contact"))
                 vcardlink.href = window.URL.createObjectURL(blob)
