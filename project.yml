@@ -1,7 +1,7 @@
 parameters: {}
 environment: {}
 packages:
-  - name: encrypted-cards
+  - name: api
     environment: {}
     parameters: {}
     actions:
