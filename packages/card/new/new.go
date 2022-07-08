@@ -4,7 +4,6 @@ import (
 	"fmt"
 
 	"github.com/Code-Hex/dd"
-	"github.com/Code-Hex/dd/p"
 )
 
 type Request struct {
@@ -19,7 +18,6 @@ type Response struct {
 
 func Main(req Request) (*Response, error) {
 	fmt.Println(dd.Dump(req))
-	p.P(req)
 
 	if req.Name == "" {
 		req.Name = "stranger"
