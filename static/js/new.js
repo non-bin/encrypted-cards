@@ -22,7 +22,7 @@ async function createCard() {
     if (customid.value != "")
         id = customid.value
 
-    let response = await fetch('/api/new/' + id, {
+    let response = await fetch('/api/new?id=' + id, {
         method: 'POST',
         headers: {
             'Content-Type': 'text/plain; charset=utf-8'
