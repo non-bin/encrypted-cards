@@ -2,6 +2,9 @@ package main
 
 import (
 	"fmt"
+
+	"github.com/Code-Hex/dd"
+	"github.com/Code-Hex/dd/p"
 )
 
 type Request struct {
@@ -14,12 +17,15 @@ type Response struct {
 	Body       string            `json:"body,omitempty"`
 }
 
-func Main(in Request) (*Response, error) {
-	if in.Name == "" {
-		in.Name = "stranger"
+func Main(req Request) (*Response, error) {
+	fmt.Println(dd.Dump(req))
+	p.P(req)
+
+	if req.Name == "" {
+		req.Name = "stranger"
 	}
 
 	return &Response{
-		Body: fmt.Sprintf("Hello %s", in.Name),
+		Body: fmt.Sprintf("Hello %s", req.Name),
 	}, nil
 }

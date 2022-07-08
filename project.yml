@@ -3,7 +3,7 @@ packages:
     actions:
       - name: read
         runtime: 'go:default'
-      - name: add
+      - name: new
         runtime: 'go:default'
       - name: update
         runtime: 'go:default'
