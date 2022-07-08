@@ -27,7 +27,7 @@ async function createCard() {
         headers: {
             'Content-Type': 'text/plain; charset=utf-8'
         },
-        body: 'cardData='+encrypt(JSON.stringify(model), password)
+        body: 'cardData='+fixedEncodeURIComponent(encrypt(JSON.stringify(model), password))
     })
     let result = await response.json()
     if (result.success) {
