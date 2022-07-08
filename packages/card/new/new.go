@@ -5,8 +5,8 @@ import (
 )
 
 type Request struct {
-	ID   string `json:"id"`
-	Body string `json:"body"`
+	ID       string `json:"id"`
+	CardData string `json:"cardData"`
 }
 
 type Response struct {
@@ -16,11 +16,7 @@ type Response struct {
 }
 
 func Main(req Request) (*Response, error) {
-	if req.Name == "" {
-		req.Name = "stranger"
-	}
-
 	return &Response{
-		Body: fmt.Sprintf("ID: %s<br>Body: %s", req.ID, req.Body),
+		Body: fmt.Sprintf("ID: %s<br>Data: %s", req.ID, req.CardData),
 	}, nil
 }

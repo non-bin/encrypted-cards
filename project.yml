@@ -9,4 +9,6 @@ packages:
         runtime: 'go:default'
       - name: delete
         runtime: 'go:default'
+      - name: test
+        runtime: 'nodejs:default'
   # - name: OTP # todo
