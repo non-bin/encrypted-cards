@@ -2,12 +2,11 @@ package main
 
 import (
 	"fmt"
-
-	"github.com/Code-Hex/dd"
 )
 
 type Request struct {
-	Name string `json:"name"`
+	ID   string `json:"id"`
+	Body string `json:"body"`
 }
 
 type Response struct {
@@ -17,13 +16,11 @@ type Response struct {
 }
 
 func Main(req Request) (*Response, error) {
-	fmt.Println(dd.Dump(req))
-
 	if req.Name == "" {
 		req.Name = "stranger"
 	}
 
 	return &Response{
-		Body: fmt.Sprintf("Hello %s", req.Name),
+		Body: fmt.Sprintf("ID: %s<br>Body: %s", req.ID, req.Body),
 	}, nil
 }
