@@ -16,7 +16,7 @@ function removeHashFromUrl() {
 async function getModel(id, password) {
     // fetch encrypted data
     let data = "";
-    await fetch("/api/read/" + id).then(x => x.text().then(encrypted => data = encrypted))
+    await fetch("/api/card/read?id=" + id).then(x => x.text().then(encrypted => data = encrypted))
     if (data == "") {
         throw "not found"
     }
@@ -36,6 +36,7 @@ function generatePassword() {
 }
 
 function generateID() {
+    // todo: check it's not already in use
     return generateRandomString(10)
 }
 
