@@ -151,7 +151,7 @@ function setEntryIfThere(input) {
 function loadEntryValue(entry) {
     let entryName = Object.getOwnPropertyNames(entry)[0]
     let entryValue = entry[entryName]
-    // Should probably make a whitelist of allowed 
+    // Should probably make a whitelist of allowed
     switch (entryName) {
         case "img":
             imageDataUrl = entryValue
@@ -279,10 +279,10 @@ async function deleteEntry() {
 }
 
 async function saveModel() {
-    let response = await fetch('/api/edit/' + id + '/' + secret, {
+    let response = await fetch('/api/card/edit?id=' + id + '%secret=' + secret, {
         method: 'PUT',
         headers: {
-            'Content-Type': 'text/plain; charset=utf-8'
+            'Content-Type': 'application/x-www-form-urlencoded'
         },
         body: encrypt(JSON.stringify(model), password)
     })
