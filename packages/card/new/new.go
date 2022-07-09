@@ -16,6 +16,8 @@ type Response struct {
 }
 
 func Main(req Request) (*Response, error) {
+	fmt.Println("Hello, World!")
+
 	return &Response{
 		Body: fmt.Sprintf("ID: %s<br>Data: %s", req.ID, req.CardData),
 	}, nil
