@@ -1,0 +1,24 @@
+{
+  "name": "encrypted-cards",
+  "version": "0.0.3-beta",
+  "description": "Your client-side encrypted business card",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/non-bin/encrypted-cards.git"
+  },
+  "author": "non-bin",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/non-bin/encrypted-cards/issues"
+  },
+  "homepage": "https://encrypted.cards/",
+  "dependencies": {
+    "eslint": "^8.19.0"
+  }
+}

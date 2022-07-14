@@ -1,14 +1,12 @@
 packages:
   - name: card
-    actions:
-      - name: read
-        runtime: 'go:default'
-      - name: new
-        runtime: 'go:default'
-      - name: update
-        runtime: 'go:default'
-      - name: delete
-        runtime: 'go:default'
-      - name: test
-        runtime: 'nodejs:default'
+	actions:
+	 - name: create
+	   runtime: 'nodejs:18'
+	 - name: read
+	   runtime: 'nodejs:18'
+	 - name: update
+	   runtime: 'nodejs:18'
+	 - name: delete
+	   runtime: 'nodejs:18'
   # - name: OTP # todo
