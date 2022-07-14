@@ -1,3 +1,11 @@
+/*
+Encrypted Cards - Your client-side encrypted business card
+Copyright (C) 2022  non-bin
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
 var model
 var password = decodeURI(location.hash.substr(1))
 
