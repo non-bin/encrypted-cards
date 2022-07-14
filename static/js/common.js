@@ -37,6 +37,7 @@ async function getModel(id, password) {
     return JSON.parse(decrypted)
 }
 
+// TODO: repeated in api code
 var chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-"
 
 function generatePassword() {
@@ -48,6 +49,7 @@ function generateID() {
     return generateRandomString(10)
 }
 
+// TODO: repeated in api code
 function generateRandomString(len) {
     let result = "";
     let buf = new Uint8Array(len);

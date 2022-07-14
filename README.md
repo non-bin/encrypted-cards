@@ -1,4 +1,4 @@
-# encrypted-cards WIP!!!
+# encrypted-cards WIP
 
 Your client-side encrypted business card.
 
@@ -6,7 +6,7 @@ Your client-side encrypted business card.
 🔒 built with security in mind  
 📱 perfect for NFC tags  
 
-https://encrypted.cards/EXAMPLE#PASSWORD
+<https://encrypted.cards/EXAMPLE#PASSWORD>
 
 ## Privacy
 
@@ -23,7 +23,7 @@ The trick here is, that we put the password behind the # of your url, the url fr
 
 > Clients are not supposed to send URI fragments to servers when they retrieve a document
 
-https://en.wikipedia.org/wiki/URI_fragment
+<https://en.wikipedia.org/wiki/URI_fragment>
 
 That way, we can never ever decrypt your business card, even if we wanted to.
 
@@ -69,13 +69,14 @@ go build
 ./encrypted-cards -local
 ```
 
---- 
+## Acknowledgements
 
-Written in go and js.  
-Using gorilla/mux, CryptoJS and davidshimjs/qrcodejs.  
+Using CryptoJS and davidshimjs/qrcodejs.  
+
+## Lisence
 
 ```lisence
-Encrypted Cards - Your client-side encrypted business card
+encrypted-cards - Your client-side encrypted business card
 Copyright (C) 2022  non-bin
 
 This program is free software: you can redistribute it and/or modify
