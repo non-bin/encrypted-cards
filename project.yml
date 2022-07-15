@@ -1,12 +1,12 @@
 packages:
-  - name: card
+	- name: card
 	actions:
-	 - name: create
-	   runtime: 'nodejs:18'
-	 - name: read
-	   runtime: 'nodejs:18'
-	 - name: update
-	   runtime: 'nodejs:18'
-	 - name: delete
-	   runtime: 'nodejs:18'
-  # - name: OTP # todo
+	- name: create
+		runtime: 'nodejs:18'
+	- name: read
+		runtime: 'nodejs:18'
+	- name: update
+		runtime: 'nodejs:18'
+	- name: delete
+		runtime: 'nodejs:18'
+	# - name: OTP # todo

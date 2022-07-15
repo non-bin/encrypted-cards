@@ -9,77 +9,73 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <html>
 
 <head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"
-        integrity="sha384-YkYpnhy3j3+zc3fQvzlbh4WGwDgt+06gsGsaApwM1O3IKIsKJk61C0Lr6YvbovUV"
-        crossorigin="anonymous"></script>
-    <script src="/js/common.js"></script>
-    <script src="/js/migrations.js"></script>
-    <script src="/js/edit.js"></script>
-    <link rel="icon" href="/logo.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="/styles/style.css" type="text/css">
-    <base target="_blank" />
-    <title>edit your encrypted business cards - encrypted.cards</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"
+		integrity="sha384-YkYpnhy3j3+zc3fQvzlbh4WGwDgt+06gsGsaApwM1O3IKIsKJk61C0Lr6YvbovUV"
+		crossorigin="anonymous"></script>
+	<script src="/js/common.js"></script>
+	<script src="/js/migrations.js"></script>
+	<script src="/js/edit.js"></script>
+	<link rel="icon" href="/logo.svg" type="image/svg+xml">
+	<link rel="stylesheet" href="/styles/style.css" type="text/css">
+	<base target="_blank" />
+	<title>edit your encrypted business cards - encrypted.cards</title>
 </head>
 
 <body>
-    <center>
-        <h1>encrypted.cards</h1>
-        This is your secret edit link, save it in your password manager or bookmark it.<br><br>
-        <form id="viewselectionform">
-            <input type="radio" checked id="cardeditorradio" name="viewselector" value="card"><label
-                for="cardeditorradio">Card Editor</label>
-            <input type="radio" id="entryeditorradio" name="viewselector" value="entry"><label
-                for="entryeditorradio">Entry
-                Editor</label>
-            <input type="radio" id="previewradio" name="viewselector" value="preview"><label
-                for="previewradio">Preview</label>
-        </form>
-        <div id="appview">
-            <!--Card Editor-->
-            <div hidden id="cardeditor">
-                <img id="profilepic"><br>
-                <label class="editlabel" for=fullname>Name: </label><input id=fullname placeholder="Your Full Name"
-                    type=text required /><br>
-                <label class="editlabel" for=imgfile>Select Image: </label><input id=imgfile type=file />
-                <button id=imgdelete>delete</button><br>
-                <label class="editlabel" for=bio>Bio: </label><textarea id=bio></textarea><br>
-                <label class="editlabel" for=stylepack>Style:</label><select id=stylepack>
-                </select>
-                <div id="styleinfo"><a id="styleinfolink">?</a></div><br>
-                <div title="this makes it harder but not impossible for others to share your business card"><input
-                        id=cleanurl type=checkbox>remove password after loading</input></div><br>
-                <button id=savecardbutton>save card</button>
-                <br><br>
-                <details>
-                    <summary>Card Link</summary>
-                    <input title="Tip: you can also use the alternative shorter domain e2e.cards!" type=text readonly
-                        id=cardlink></input><br>
-                    <button id=copybutton>copy card url</button>
-                </details>
-            </div>
-            <!--Entry Editor-->
-            <div hidden id="entryeditor">
-                <label class="editlabel" for=selectedentry>Select Entry:</label><select name="selectedentry"
-                    id="selectedentry">
-                    <option value="newentry">New Entry</option>
-                </select><br>
-                <label class="editlabel" for=entrytype>Entry Type:</label><select name="entrytype"
-                    id="entrytype"></select><br>
-                <label class="editlabel" for=entrypos>Position:</label><select id="entrypos"></select><br>
-                <label class="editlabel" for=entryvalue>Entry Value:</label><input type="text" id="entryvalue"><br>
-                <label class="editlabel" for=entrydisplayname>Display Name:</label><input type="text"
-                    id="entrydisplayname"><br>
-                <small id="urlpreview"></small>
-                <br><br>
-                <button id=saveentrybutton class="smallbutton">save entry</button>
-                <button id=deleteentrybutton class="smallbutton" disabled>delete entry</button>
-            </div>
-            <!--Preview-->
-            <div hidden id="preview">
-                <iframe id=cardpreview width=100% height=100%></iframe>
-            </div>
-        </div>
-    </center>
+	<center>
+		<h1>encrypted.cards</h1>
+		This is your secret edit link, save it in your password manager or bookmark it.<br><br>
+		<form id="viewselectionform">
+			<input type="radio" checked id="cardeditorradio" name="viewselector" value="card"><label
+				for="cardeditorradio">Card Editor</label>
+			<input type="radio" id="entryeditorradio" name="viewselector" value="entry"><label for="entryeditorradio">Entry
+				Editor</label>
+			<input type="radio" id="previewradio" name="viewselector" value="preview"><label
+				for="previewradio">Preview</label>
+		</form>
+		<div id="appview">
+			<!--Card Editor-->
+			<div hidden id="cardeditor">
+				<img id="profilepic"><br>
+				<label class="editlabel" for=fullname>Name: </label><input id=fullname placeholder="Your Full Name" type=text
+					required /><br>
+				<label class="editlabel" for=imgfile>Select Image: </label><input id=imgfile type=file />
+				<button id=imgdelete>delete</button><br>
+				<label class="editlabel" for=bio>Bio: </label><textarea id=bio></textarea><br>
+				<label class="editlabel" for=stylepack>Style:</label><select id=stylepack>
+				</select>
+				<div id="styleinfo"><a id="styleinfolink">?</a></div><br>
+				<div title="this makes it harder but not impossible for others to share your business card"><input id=cleanurl
+						type=checkbox>remove password after loading</input></div><br>
+				<button id=savecardbutton>save card</button>
+				<br><br>
+				<details>
+					<summary>Card Link</summary>
+					<input title="Tip: you can also use the alternative shorter domain e2e.cards!" type=text readonly
+						id=cardlink></input><br>
+					<button id=copybutton>copy card url</button>
+				</details>
+			</div>
+			<!--Entry Editor-->
+			<div hidden id="entryeditor">
+				<label class="editlabel" for=selectedentry>Select Entry:</label><select name="selectedentry" id="selectedentry">
+					<option value="newentry">New Entry</option>
+				</select><br>
+				<label class="editlabel" for=entrytype>Entry Type:</label><select name="entrytype" id="entrytype"></select><br>
+				<label class="editlabel" for=entrypos>Position:</label><select id="entrypos"></select><br>
+				<label class="editlabel" for=entryvalue>Entry Value:</label><input type="text" id="entryvalue"><br>
+				<label class="editlabel" for=entrydisplayname>Display Name:</label><input type="text" id="entrydisplayname"><br>
+				<small id="urlpreview"></small>
+				<br><br>
+				<button id=saveentrybutton class="smallbutton">save entry</button>
+				<button id=deleteentrybutton class="smallbutton" disabled>delete entry</button>
+			</div>
+			<!--Preview-->
+			<div hidden id="preview">
+				<iframe id=cardpreview width=100% height=100%></iframe>
+			</div>
+		</div>
+	</center>
 </body>
 
 </html>

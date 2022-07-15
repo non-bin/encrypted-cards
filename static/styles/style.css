@@ -7,105 +7,130 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
 body {
-    color: white;
-    background-color: #222222;
-    font-family: sans-serif;
+	color: white;
+	background-color: #222222;
+	font-family: sans-serif;
 }
 
 .editlabel {
-    display: block;
-    padding-top: 10px;
-    text-align: left;
+	display: block;
+	padding-top: 10px;
+	text-align: left;
 }
 
 a {
-    color: white;
+	color: white;
 }
 
 button {
-    transition: transform .2s;
+	transition: transform .2s;
 }
 
 button:hover {
-    transform: scale(1.025);
+	transform: scale(1.025);
 }
 
-textarea, input[type=url], input[type=text], input[type=email], input[type=file], select, button {
-    border-radius: 5px;
-    color: white;
-    background-color: #222222;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 100%;
-    padding: 5px;
+textarea,
+input[type=url],
+input[type=text],
+input[type=email],
+input[type=file],
+select,
+button {
+	border-radius: 5px;
+	color: white;
+	background-color: #222222;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 5px;
 }
 
 #stylepack {
-    width: calc(100% - 20px);
+	width: calc(100% - 20px);
 }
 
 #styleinfo {
-    display: inline-block;
-    text-align: right;
-    max-width: 20px;
+	display: inline-block;
+	text-align: right;
+	max-width: 20px;
 }
 
 .smallbutton {
-    width: calc(50% - 3px);
+	width: calc(50% - 3px);
 }
 
 input[type=file] {
-    width: calc(80% - 6px);
+	width: calc(80% - 6px);
 }
 
 #imgdelete {
-    max-width: 20%;
+	max-width: 20%;
 }
 
 #cardpreview {
-    border: 2px;
+	border: 2px;
 }
 
 .listing {
-    display: inline-block;
-    text-align: left;
+	display: inline-block;
+	text-align: left;
 }
 
-#createbutton, #customid {
-    width: 50%;
+#createbutton,
+#customid {
+	width: 50%;
 }
 
 .centered {
-    text-align: center;
+	text-align: center;
 }
 
 @media (orientation: landscape) {
-    body {
-        font-size: 14pt;
-    }
-    #appview {
-        width: 50%;
-    }
-    textarea, input[type=url], input[type=text], input[type=email], input[type=file], select, button {
-        font-size: 14pt;
-    }
-    #profilepic {
-        max-width: 30%;
-    }
+	body {
+		font-size: 14pt;
+	}
+
+	#appview {
+		width: 50%;
+	}
+
+	textarea,
+	input[type=url],
+	input[type=text],
+	input[type=email],
+	input[type=file],
+	select,
+	button {
+		font-size: 14pt;
+	}
+
+	#profilepic {
+		max-width: 30%;
+	}
 }
 
 @media (orientation: portrait) {
-    body {
-        font-size: 20pt;
-    }
-    #appview {
-        width: 90%;
-    }
-    textarea, input[type=url], input[type=text], input[type=email], input[type=file], select, button {
-        font-size: 20pt;
-    }
-    #profilepic {
-        max-width: 50%;
-    }
+	body {
+		font-size: 20pt;
+	}
+
+	#appview {
+		width: 90%;
+	}
+
+	textarea,
+	input[type=url],
+	input[type=text],
+	input[type=email],
+	input[type=file],
+	select,
+	button {
+		font-size: 20pt;
+	}
+
+	#profilepic {
+		max-width: 50%;
+	}
 }

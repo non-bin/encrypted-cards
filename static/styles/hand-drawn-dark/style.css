@@ -7,78 +7,78 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
 body {
-    color: white;
-    background-color: #222222;
-    font-family: sans-serif;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+	color: white;
+	background-color: #222222;
+	font-family: sans-serif;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 
 h1 {
-    font-size: 60;
+	font-size: 60;
 }
 
 #footer {
-    color: white;
-    background-color: #222222;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    font-size: 20;
-    text-align: center;
+	color: white;
+	background-color: #222222;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	font-size: 20;
+	text-align: center;
 }
 
 a {
-    color: white;
+	color: white;
 }
 
 #card {
-    max-width: 768px;
-    background-color: #202020;
-    box-shadow: 0 0 10px #202020;
-    border-radius: 10px;
-    padding: 20px;
+	max-width: 768px;
+	background-color: #202020;
+	box-shadow: 0 0 10px #202020;
+	border-radius: 10px;
+	padding: 20px;
 }
 
 .img {
-    max-width: 768px;
+	max-width: 768px;
 }
 
 
 .entry {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5px;
-    transition: transform .2s;
-    text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	transition: transform .2s;
+	text-align: left;
 }
 
 .entry:hover {
-    transform: scale(1.025);
+	transform: scale(1.025);
 }
 
 .link {
-    font-size: 40;
+	font-size: 40;
 }
 
 .icon {
-    /*turn black svg white https://stackoverflow.com/a/53336754*/
-    filter: invert(97%) sepia(0%) saturate(7486%) hue-rotate(14deg) brightness(102%) contrast(107%);
-    vertical-align: middle;
-    height: 75px;
-    padding: 5px;
-    padding-right: 20px;
+	/*turn black svg white https://stackoverflow.com/a/53336754*/
+	filter: invert(97%) sepia(0%) saturate(7486%) hue-rotate(14deg) brightness(102%) contrast(107%);
+	vertical-align: middle;
+	height: 75px;
+	padding: 5px;
+	padding-right: 20px;
 }
 
 .bio {
-    font-size: 30;
+	font-size: 30;
 }
 
 #qrcode {
-    padding: 10px;
-    background-color: white;
-    width: min-content;
+	padding: 10px;
+	background-color: white;
+	width: min-content;
 }

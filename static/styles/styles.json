@@ -1,8 +1,10 @@
 [
-    {
-        "name":"Hand Drawn Dark",
-        "id":"hand-drawn-dark",
-        "author":"us",
-        "sources":["https://www.iconfinder.com/iconsets/social-hand-drawn-icons"]
-    }
+	{
+		"name": "Hand Drawn Dark",
+		"id": "hand-drawn-dark",
+		"author": "us",
+		"sources": [
+			"https://www.iconfinder.com/iconsets/social-hand-drawn-icons"
+		]
+	}
 ]

@@ -77,19 +77,19 @@ Business cards are described in jsons, to get an overview here's a simple exampl
 
 ```json
 {
-  "version": "0.0.3-beta",
-  "style": "hand-drawn-dark",
-  "fullname": "Your Name",
-  "bio": "Add text here",
-  "entries": [
-    {
-      "type": "website",
-      "value": "https://example.com",
-      "displayname": "example.com"
-    }
-  ],
-  "cleanurl": false,
-  "img": ""
+	"version": "0.0.3-beta",
+	"style": "hand-drawn-dark",
+	"fullname": "Your Name",
+	"bio": "Add text here",
+	"entries": [
+		{
+			"type": "website",
+			"value": "https://example.com",
+			"displayname": "example.com"
+		}
+	],
+	"cleanurl": false,
+	"img": ""
 }
 ```
 
