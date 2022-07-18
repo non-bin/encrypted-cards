@@ -71,6 +71,7 @@ go build
 
 ## Acknowledgements
 
+Originally written in GoLang and JS by [Yeka](https://forum.dangerousthings.com/u/yeka/summary)
 Using CryptoJS and davidshimjs/qrcodejs.  
 
 ## Lisence
